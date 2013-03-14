@@ -10,7 +10,8 @@ def cmd(data):
     print sock.recv(65535)
     sock.close()
     
-if len(sys.argv) != 4:
-    print 'usage: client type event body'
-    sys.exit(0)
-cmd('%s %s %s' % (sys.argv[1], sys.argv[2], sys.argv[3]))
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print 'usage: client event[load,shutdown] body'
+        sys.exit(0)
+    cmd('%s %s' % (sys.argv[1], sys.argv[2]))
