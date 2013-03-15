@@ -22,9 +22,7 @@ if __name__ == "__main__":
         cmd_th = threading.Thread(target=cmd.serve_forever, args=()).start()
         # start dns server
         proxy.serve_forever()
-        print 'fff'
     except Exception:
-        print 'kkk';
         import traceback
         import sys
         

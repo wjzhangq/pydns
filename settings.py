@@ -15,6 +15,8 @@ MASTER_DNS = (
 PROXY_DNS = ('0.0.0.0', 1053)
 #message entrance
 CMD_SERVER = ('0.0.0.0', 5454)
+#http server
+HTTP_SERVER = ('0.0.0.0', 8000)
 
 # master dns time out, in seconds
 MASTER_DNS_TIMEOUT = 2
